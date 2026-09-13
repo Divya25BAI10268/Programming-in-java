@@ -48,6 +48,7 @@ Student-Task-Manager/
 │
 ├── .gitignore
 └── README.md
+```
 ##🚀 How to Run the Project
 Method 1: Using IntelliJ IDEA
 Download or clone this repository.
