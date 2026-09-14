@@ -1,3 +1,5 @@
+#Programming in JAVA
+
 # Student Task Manager
 
 A simple Java Swing based desktop application designed to help students manage their daily academic tasks in an organized way.
@@ -143,10 +145,8 @@ The project can be further improved by adding:
 
 ## 👩‍💻 Author
 
-Divya Kumari
+**NAME**:- Divya Kumari
 
-BTech Student
+**REG. NO.**:- 25BAI10268
 
-## 📄 License
-
-This project was created for educational and academic purposes.
+**BRANCH**:- CSE(AI ML)
