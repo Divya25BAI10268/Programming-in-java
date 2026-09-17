@@ -143,6 +143,20 @@ The project can be further improved by adding:
 
 📊 Task progress statistics
 
+## How to Run from Command Line
+
+1. Clone or download the repository.
+   
+2. Open the terminal in the project folder.
+
+3. Compile the Java files:
+
+javac src/*.java
+
+4. Run the application:
+
+java -cp src LoginPage
+
 ## 👩‍💻 Author
 
 **NAME**:- Divya Kumari
