@@ -3,11 +3,9 @@ import java.awt.*;
 import java.util.ArrayList;
 
 public class StudentTaskManager extends JFrame {
-
-    // Store all tasks
+    
     private ArrayList<Task> tasks = new ArrayList<>();
-
-    // Main window
+    
     public StudentTaskManager() {
 
         setTitle("Student Task Manager");
@@ -22,8 +20,7 @@ public class StudentTaskManager extends JFrame {
 
         JPanel mainPanel = new JPanel(new BorderLayout());
         mainPanel.setBackground(new Color(245, 247, 250));
-
-        // Heading
+        
         JLabel heading = new JLabel(
                 "STUDENT TASK MANAGER",
                 SwingConstants.CENTER
@@ -36,8 +33,7 @@ public class StudentTaskManager extends JFrame {
         );
 
         mainPanel.add(heading, BorderLayout.NORTH);
-
-        // Buttons panel
+        
         JPanel buttonPanel = new JPanel(
                 new GridLayout(2, 2, 25, 25)
         );
@@ -63,8 +59,7 @@ public class StudentTaskManager extends JFrame {
         buttonPanel.add(exitButton);
 
         mainPanel.add(buttonPanel, BorderLayout.CENTER);
-
-        // Footer
+        
         JLabel footer = new JLabel(
                 "Stay organized • Complete your tasks • Achieve your goals",
                 SwingConstants.CENTER
@@ -165,8 +160,7 @@ public class StudentTaskManager extends JFrame {
             String title = titleField.getText().trim();
             String description = descriptionField.getText().trim();
             String deadline = deadlineField.getText().trim();
-
-            // Check empty fields
+            
             if (title.isEmpty() || deadline.isEmpty()) {
 
                 JOptionPane.showMessageDialog(
@@ -178,8 +172,7 @@ public class StudentTaskManager extends JFrame {
 
                 return;
             }
-
-            // Generate Task ID
+            
             int taskId = tasks.size() + 1;
 
             Task task = new Task(
@@ -215,11 +208,9 @@ public class StudentTaskManager extends JFrame {
         taskArea.setFont(
                 new Font("Arial", Font.PLAIN, 15)
         );
-
-        // Display tasks
+        
         updateTaskArea(taskArea);
-
-        // Complete button
+        
         JButton completeButton =
                 new JButton("MARK TASK COMPLETED");
 
@@ -228,8 +219,7 @@ public class StudentTaskManager extends JFrame {
         );
 
         completeButton.setFocusPainted(false);
-
-        // Delete button
+        
         JButton deleteButton =
                 new JButton("DELETE TASK");
 
@@ -239,7 +229,6 @@ public class StudentTaskManager extends JFrame {
 
         deleteButton.setFocusPainted(false);
 
-        // Buttons panel
         JPanel bottomPanel = new JPanel();
 
         bottomPanel.add(completeButton);
