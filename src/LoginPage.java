@@ -6,7 +6,6 @@ public class LoginPage extends JFrame {
     private JTextField usernameField;
     private JPasswordField passwordField;
 
-    // Temporary storage for registered student
     private static String registeredUsername = "";
     private static String registeredPassword = "";
 
@@ -93,7 +92,6 @@ public class LoginPage extends JFrame {
         add(mainPanel);
     }
 
-    // Registration
     private void register() {
 
         JTextField newUsernameField = new JTextField();
@@ -148,8 +146,7 @@ public class LoginPage extends JFrame {
             );
         }
     }
-
-    // Login
+    
     private void login() {
 
         String username =
