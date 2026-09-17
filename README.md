@@ -151,11 +151,11 @@ The project can be further improved by adding:
 
 3. Compile the Java files:
 
-javac src/*.java
+   javac src/*.java
 
 4. Run the application:
 
-java -cp src LoginPage
+   java -cp src LoginPage
 
 ## 👩‍💻 Author
 
